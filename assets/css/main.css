@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Base */
+
+.col-4 {
+  width: 33.3334%;
+  display: flex;
+  margin: auto 20px;
+}
+
+.col-5 {
+  width: 41.6667%;
+  display: flex;
+  margin: auto 20px;
+}
+
+.col-6 {
+  width: 50%;
+  display: flex;
+  margin: auto 20px;
+}
+
+.col-7 {
+  width: 58.3333%;
+  display: flex;
+  margin: auto 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.row-5 {
+  height: 50%;
+}
+
+/* Header */
+
+.header {
+  height: 90px;
+  background-color: #373737;
+  color: white;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-logo {
+  height: 60px;
+  width: 60px;
+  margin: auto 100px;
+  cursor: pointer;
+}
+
+.header-navbar {
+  flex: 1;
+  margin: auto 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.header-navbar__link {
+  display: block;
+  padding: 16px 36px;
+  border-radius: 28px;
+  transition: ease-in 0.3s;
+}
+
+.header-navbar__link:hover {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+}
+
+.header-cart {
+  margin: auto 100px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Body */
+
+/* Home Page */
+
+.home-page {
+  padding: 100px 0 0;
+}
+
+.home-page .home-page__background {
+  height: 960px;
+}
+
+.home-page__background {
+  margin-top: -140px;
+  display: flex;
+  position: relative;
+}
+
+.home-page__background-fire__img {
+  position: absolute;
+}
+
+.home-page__background-fire__text {
+  color: white;
+  margin-left: 100px;
+  margin-top: 350px;
+}
+
+.home-page__background-fire__text h3 {
+  width: 700px;
+  height: 90px;
+  line-height: 76px;
+  font-size: 48px;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+.home-page__background-fire__text p {
+  width: 545px;
+  height: 310px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.8px;
+}
+
+.home-page__btn-try-on {
+  position: absolute;
+  padding: 15px 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  border: 2px solid white;
+  border-radius: 69px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  transition: ease-in 0.3s;
+}
+
+.home-page__btn-try-on:hover {
+  background-color: white;
+  color: black;
+}
+.home-page__background-eclipse {
+  width: 700px;
+  height: 650px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  margin-top: 180px;
+  margin-left: 780px;
+  position: absolute;
+}
+
+.home-page__background-eclipse img {
+  width: 85%;
+  margin: 10px auto 0;
+}
+
+/* Sell Page */
+
+.page__header {
+  height: 100px;
+  background-color: #373737;
+  color: white;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.page__content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #1b1a1a;
+  color: white;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sells-page__content {
+  background-image: url('../images/money.png');
+}
+
+.sells-page__content-shoes-item {
+  width: 320px;
+  height: 320px;
+  padding: 20px 0;
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  display: flex;
+  margin: 100px 60px;
+}
+
+.sells-page__content-shoes-item__background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sells-page__content-shoes-item__background:hover {
+  border: 1px solid white;
+}
+.sells-page__content-shoes-item__text {
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  color: white;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  margin-bottom: -10px;
+}
+
+.sells-page__content-shoes-item-middle {
+  display: flex;
+  margin: auto;
+}
+
+/* Delivery page */
+
+.delivery-page__content {
+  padding: 50px;
+}
+
+.delivery-page__content-item-list {
+  margin: 40px 50px 0;
+}
+
+.delivery-page__content-item-list h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  margin-left: 30px;
+}
+
+.delivery-page__content-item {
+  margin: 50px 0;
+  display: flex;
+}
+
+.delivery-page__content-item-number {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.delivery-page__content-item-number__text {
+  font-size: 70px;
+  font-weight: 600;
+  display: flex;
+  z-index: 1;
+  line-height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.delivery-page__content-item-text {
+  width: 300px;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* News page */
+
+.our-news-page__content {
+  background-image: url('../images/news.png');
+  padding: 70px;
+}
+
+.our-news-page__content-news__heading {
+  width: 480px;
+  padding: 10px 24px;
+  border: 2px solid #41cffc;
+  border-radius: 42px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+/* Contacts */
+
+.contacts-page__content {
+  background-image: url('../images/contacts.png');
+  padding: 50px;
+}
+
+.contacts-page__content-info {
+  position: relative;
+}
+
+.contacts-page__content-info-item {
+  padding: 12px 20px;
+}
+
+.contacts-page__content-info-item__heading {
+  font-weight: 600;
+  font-size: 32px;
+  padding: 16px 0;
+}
+
+.contacts-page__content-info-item__text {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.contacts-page__content-contact {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.contacts-page__content-contact__item {
+  padding: 30px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  height: 40px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media__icon {
+  font-size: 16px;
+}
+
+.social-media__text a {
+  color: black;
+  margin-left: 10px;
+}
+
+.social-media-item {
+  display: flex;
+  padding: 10px 50px;
+}
